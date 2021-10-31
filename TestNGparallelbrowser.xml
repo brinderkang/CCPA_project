@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="CCPA" parallel="tests">
+	<test name="Regression on Chrome" preserve-order="true">
+	<parameter name="browser" value="chrome" />
+		<classes>
+			<class name ="ccpa.testcases.HomepageTest" ></class>
+		
+		</classes>
+	</test>
+	<test name="Regression on Firefox" preserve-order="true">
+	<parameter name="browser" value="firefox" />
+		<classes>
+			<class name ="ccpa.testcases.HomepageTest" ></class>
+		
+		</classes>
+	</test>
+
+
+</suite>

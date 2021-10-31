@@ -1,5 +1,4 @@
-package ccpa.Extentreport;
-
+package ccpa.extentreports;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
@@ -19,11 +18,13 @@ import com.relevantcodes.extentreports.ExtentReports;
 import com.relevantcodes.extentreports.ExtentTest;
 import com.relevantcodes.extentreports.LogStatus;
 
-public class ExtentReportccpa implements IReporter {
-	
+
+
+public class Extentreport_ccpa implements IReporter {
 	private ExtentReports extent;
 
-	public void generateReport1(List<XmlSuite> xmlSuites, List<ISuite> suites,String outputDirectory) {
+	public void generateReport(List<XmlSuite> xmlSuites, List<ISuite> suites,
+	String outputDirectory) {
 	DateFormat dateFormat = new SimpleDateFormat("yyyy/MM/dd HH:mm:ss");
 	Date date = new Date();
 	String TempFileName=dateFormat.format(date);
@@ -32,8 +33,11 @@ public class ExtentReportccpa implements IReporter {
 	String NewFileName=NewFileName2.replace(":","_");
 	System.out.println(NewFileName);
 	System.out.println(System.getProperty("user.dir"));
-	extent = new ExtentReports(System.getProperty("user.dir")+"\\test-output\\Logs-extentReport\\extentreport-"+NewFileName+".html", true);
+//	extent = new ExtentReports(System.getProperty("user.dir")+"\\test-output\\Logs-extentReport\\extentreport-"+NewFileName+".html", true);
 
+	extent = new ExtentReports(System.getProperty("user.dir")+"\\test-output\\ExtentReportss\\extentreport.html", true);
+
+	
 	for (ISuite suite : suites) {
 	Map<String, ISuiteResult> result = suite.getResults();
 
@@ -45,6 +49,7 @@ public class ExtentReportccpa implements IReporter {
 	buildTestNodes(context.getSkippedTests(), LogStatus.SKIP);
 	}
 	}
+	
 
 	extent.flush();
 	extent.close();
@@ -66,7 +71,8 @@ public class ExtentReportccpa implements IReporter {
 	if (result.getThrowable() != null) {
 	test.log(status, result.getThrowable());
 	} else {
-	test.log(status, "Test " + status.toString().toLowerCase() + "ed");
+	test.log(status, "Test " + status.toString().toLowerCase()
+	+ "ed");
 	}
 
 	extent.endTest(test);
@@ -80,5 +86,7 @@ public class ExtentReportccpa implements IReporter {
 	return calendar.getTime();
 	}
 
+
+	
 
 }

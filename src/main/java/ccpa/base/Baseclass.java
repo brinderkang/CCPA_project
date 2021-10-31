@@ -34,17 +34,17 @@ public class Baseclass {
 		}
 	}
 	
-	public void initialisation()
+	public void initialisation(String url)
 	{
 		String browsername=prop.getProperty("browser");
 		if(browsername.equalsIgnoreCase("chrome"))
 		{
-			System.setProperty("webdriver.chrome.driver","D:\\Brinder\\BrowserDrivers\\chromedriver.exe");
+			System.setProperty("webdriver.chrome.driver","C:\\Users\\rahul.chadha\\Desktop\\BrowserDrivers\\chromedriver.exe");
 			driver=new ChromeDriver();
 		}
 		if(browsername.equals("Firefox"))
 		{
-		System.setProperty("webdriver.geko.driver", "D:\\Brinder\\BrowserDrivers\\gekodriver.exe");
+		System.setProperty("webdriver.geko.driver", "C:\\Users\\rahul.chadha\\Desktop\\BrowserDrivers\\gekodriver.exe");
 		driver=new FirefoxDriver();
 		}
 		
@@ -53,7 +53,7 @@ public class Baseclass {
 		driver.manage().timeouts().pageLoadTimeout(Util.PAGE_LOAD_TIMEOUT, TimeUnit.SECONDS);
 		driver.manage().timeouts().implicitlyWait(Util.IMPLICIT_WAIT, TimeUnit.SECONDS);
 		
-		driver.get(prop.getProperty("url1"));
+		driver.get(url);
 	}
 	
 

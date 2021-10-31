@@ -67,10 +67,10 @@ public class Util extends Baseclass {
 		}
 	}
 	
-	public static void getCookiesinfo()
-
+	public static Integer getCookiesinfo()
 	{
 		Set<Cookie> allcookies= driver.manage().getCookies();
+		int cookiescount = allcookies.size();
 		for(Cookie cookie:allcookies)
 		{
 			System.out.println("Name : "+ cookie.getName());
@@ -79,6 +79,7 @@ public class Util extends Baseclass {
 			System.out.println("Value : "+ cookie.getValue());
 			System.out.println("-------------------------------------");
 		}
+		return cookiescount;
 	}
 	
 	// Get Date and Time of system

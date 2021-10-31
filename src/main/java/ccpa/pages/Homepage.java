@@ -26,6 +26,12 @@ public class Homepage extends Baseclass {
 	WebElement acceptButton;
 	@FindBy(xpath="(//span[text()='Healthcare Professionals Site'])[1]")
 	WebElement hcpsite;
+	@FindBy(xpath="//*[@id=\"container-5061adac61\"]/div[1]/div[1]/div[1]/div[1]")
+	WebElement hcpPopup;
+	@FindBy(xpath="//h3[text()='Link to Healthcare Professionals Site']")
+	WebElement hcpPopupHeader;
+	@FindBy(xpath="(//a[@role='button'])[3]")
+	WebElement hcpPopupOKBtn;
 	
 	public Homepage()
 	{
@@ -49,33 +55,58 @@ public class Homepage extends Baseclass {
 		return true;
 	}
 	
-	public boolean uiCCPApopup()
+	public boolean uiCCPApopup() throws InterruptedException
 	{
+		String expectedText="This website may use certain types of cookies and other technologies to personalize content and to show more personalized ads. By clicking “Accept”, you understand that you are directing Genentech to disclose data that may be considered personal information to third parties for these purposes. For more details on what information we collect, why we collect it and to whom we disclose it, please visit our privacy policy.";
 		ouruseofcookies.isDisplayed();
 		ccpaText.isDisplayed();
 		privacyPolicyLink.isDisplayed();
 		cookiesPreferences.isDisplayed();
-		return true;
+		String actualText= ccpaText.getText();
+		System.out.println(actualText);
+		Thread.sleep(1000);
+		if(expectedText.equals(actualText))
+		{
+			return true;
+		}
+		else 
+		{
+			return false;
+		}
+		
 	}
 	
-	public boolean saveCookiesPopup()
+	public Integer saveCookiesPopup() throws InterruptedException
 	{
+		Thread.sleep(1000);
 		acceptButton.click();
-		Util.getCookiesinfo();
-		return true;
+		
+		Thread.sleep(1000);
+		return Util.getCookiesinfo();
 	}
 	
-	public boolean hcpsite()
+	public boolean hcpsite() throws InterruptedException
 	{
 		if(hcpsite.isDisplayed())
 		{
 			hcpsite.click();
+			hcpPopup.isDisplayed();
+			hcpPopupHeader.isDisplayed();
+			Thread.sleep(2000);
+			hcpPopupOKBtn.click();
 			return true;
 		}
 		else
 		{
 			return false;
 		}
+	}
+	public boolean hcpcookiesContainer() throws InterruptedException
+	{
+		Thread.sleep(2000);
+//		Util.getCookiesinfo();
+		ccpaContainer.isDisplayed();
+		return true;
 	}
 	
 

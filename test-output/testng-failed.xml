@@ -1,14 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [CCPA]">
+<suite name="Failed suite [CCPA]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Regression(failed)">
     <classes>
       <class name="ccpa.testcases.HomepageTest">
         <methods>
-          <include name="CCPA_TC_4_Verify_that_clicking_on_Accept_button_Cookie_should_saved_in_system"/>
+          <include name="CCPA_TC_7_Verify_Cookies_Saved_on_Accept_Button_Click_For_HCPSite"/>
+          <include name="CCPA_TC_6_Verify_UI_of_CCPA_pop_up_for_HCPsite"/>
           <include name="setUp"/>
-          <include name="CCPA_TC_3_UI_of_CCPA_pop_up_for_patient_domain"/>
-          <include name="CCPA_TC_1_Verify_CCPA_is_triggered_for_patient_domain"/>
           <include name="teardown"/>
           <include name="teardown"/>
         </methods>
