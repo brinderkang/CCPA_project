@@ -26,7 +26,7 @@ public class Homepage extends Baseclass {
 	WebElement acceptButton;
 	@FindBy(xpath="(//span[text()='Healthcare Professionals Site'])[1]")
 	WebElement hcpsite;
-	@FindBy(xpath="//*[@id=\"container-5061adac61\"]/div[1]/div[1]/div[1]/div[1]")
+	@FindBy(xpath="body/div[3]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]")
 	WebElement hcpPopup;
 	@FindBy(xpath="//h3[text()='Link to Healthcare Professionals Site']")
 	WebElement hcpPopupHeader;
@@ -90,7 +90,7 @@ public class Homepage extends Baseclass {
 		if(hcpsite.isDisplayed())
 		{
 			hcpsite.click();
-			hcpPopup.isDisplayed();
+//			hcpPopup.isDisplayed();
 			hcpPopupHeader.isDisplayed();
 			Thread.sleep(2000);
 			hcpPopupOKBtn.click();

@@ -2,20 +2,20 @@
 <testng-results ignored="0" total="9" passed="9" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-10-31T14:54:14 UTC" name="CCPA" finished-at="2021-10-31T14:54:42 UTC" duration-ms="28375">
+  <suite started-at="2021-11-07T12:53:32 UTC" name="CCPA" finished-at="2021-11-07T12:53:48 UTC" duration-ms="15934">
     <groups>
     </groups>
-    <test started-at="2021-10-31T14:54:14 UTC" name="Regression" finished-at="2021-10-31T14:54:42 UTC" duration-ms="28375">
+    <test started-at="2021-11-07T12:53:32 UTC" name="Regression" finished-at="2021-11-07T12:53:48 UTC" duration-ms="15934">
       <class name="ccpa.testcases.HomepageTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:ccpa.testcases.HomepageTest@47d9a273]" started-at="2021-10-31T14:54:09 UTC" name="setUp" finished-at="2021-10-31T14:54:14 UTC" duration-ms="4983" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:ccpa.testcases.HomepageTest@47d9a273]" started-at="2021-11-07T12:53:27 UTC" name="setUp" finished-at="2021-11-07T12:53:32 UTC" duration-ms="4973" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="CCPA_TC_1_Verify_Page_Title()[pri:1, instance:ccpa.testcases.HomepageTest@47d9a273]" started-at="2021-10-31T14:54:14 UTC" name="CCPA_TC_1_Verify_Page_Title" finished-at="2021-10-31T14:54:14 UTC" duration-ms="19" status="PASS">
+        <test-method signature="CCPA_TC_1_Verify_Page_Title()[pri:1, instance:ccpa.testcases.HomepageTest@47d9a273]" started-at="2021-11-07T12:53:32 UTC" name="CCPA_TC_1_Verify_Page_Title" finished-at="2021-11-07T12:53:32 UTC" duration-ms="34" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CCPA_TC_1_Verify_Page_Title -->
-        <test-method is-config="true" signature="teardown(org.testng.ITestResult)[pri:0, instance:ccpa.testcases.HomepageTest@47d9a273]" started-at="2021-10-31T14:54:14 UTC" name="teardown" finished-at="2021-10-31T14:54:14 UTC" duration-ms="2" status="PASS">
+        <test-method is-config="true" signature="teardown(org.testng.ITestResult)[pri:0, instance:ccpa.testcases.HomepageTest@47d9a273]" started-at="2021-11-07T12:53:32 UTC" name="teardown" finished-at="2021-11-07T12:53:32 UTC" duration-ms="2" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -26,11 +26,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-        <test-method signature="CCPA_TC_2_Verify_Display_Logo()[pri:2, instance:ccpa.testcases.HomepageTest@47d9a273]" started-at="2021-10-31T14:54:14 UTC" name="CCPA_TC_2_Verify_Display_Logo" finished-at="2021-10-31T14:54:14 UTC" duration-ms="137" status="PASS">
+        <test-method signature="CCPA_TC_2_Verify_Display_Logo()[pri:2, instance:ccpa.testcases.HomepageTest@47d9a273]" started-at="2021-11-07T12:53:32 UTC" name="CCPA_TC_2_Verify_Display_Logo" finished-at="2021-11-07T12:53:32 UTC" duration-ms="146" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CCPA_TC_2_Verify_Display_Logo -->
-        <test-method is-config="true" signature="teardown(org.testng.ITestResult)[pri:0, instance:ccpa.testcases.HomepageTest@47d9a273]" started-at="2021-10-31T14:54:14 UTC" name="teardown" finished-at="2021-10-31T14:54:14 UTC" duration-ms="1" status="PASS">
+        <test-method signature="CCPA_TC_3_Verify_CCPA_is_triggered_for_patient_domain()[pri:3, instance:ccpa.testcases.HomepageTest@47d9a273]" started-at="2021-11-07T12:53:32 UTC" name="CCPA_TC_3_Verify_CCPA_is_triggered_for_patient_domain" finished-at="2021-11-07T12:53:33 UTC" duration-ms="447" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CCPA_TC_3_Verify_CCPA_is_triggered_for_patient_domain -->
+        <test-method is-config="true" signature="teardown(org.testng.ITestResult)[pri:0, instance:ccpa.testcases.HomepageTest@47d9a273]" started-at="2021-11-07T12:53:32 UTC" name="teardown" finished-at="2021-11-07T12:53:32 UTC" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -41,11 +45,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-        <test-method signature="CCPA_TC_3_Verify_CCPA_is_triggered_for_patient_domain()[pri:3, instance:ccpa.testcases.HomepageTest@47d9a273]" started-at="2021-10-31T14:54:14 UTC" name="CCPA_TC_3_Verify_CCPA_is_triggered_for_patient_domain" finished-at="2021-10-31T14:54:15 UTC" duration-ms="884" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- CCPA_TC_3_Verify_CCPA_is_triggered_for_patient_domain -->
-        <test-method is-config="true" signature="teardown(org.testng.ITestResult)[pri:0, instance:ccpa.testcases.HomepageTest@47d9a273]" started-at="2021-10-31T14:54:15 UTC" name="teardown" finished-at="2021-10-31T14:54:15 UTC" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="teardown(org.testng.ITestResult)[pri:0, instance:ccpa.testcases.HomepageTest@47d9a273]" started-at="2021-11-07T12:53:33 UTC" name="teardown" finished-at="2021-11-07T12:53:33 UTC" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -56,11 +56,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-        <test-method signature="CCPA_TC_4_UI_of_CCPA_pop_up_for_patient_domain()[pri:4, instance:ccpa.testcases.HomepageTest@47d9a273]" started-at="2021-10-31T14:54:15 UTC" name="CCPA_TC_4_UI_of_CCPA_pop_up_for_patient_domain" finished-at="2021-10-31T14:54:18 UTC" duration-ms="3785" status="PASS">
+        <test-method signature="CCPA_TC_4_UI_of_CCPA_pop_up_for_patient_domain()[pri:4, instance:ccpa.testcases.HomepageTest@47d9a273]" started-at="2021-11-07T12:53:33 UTC" name="CCPA_TC_4_UI_of_CCPA_pop_up_for_patient_domain" finished-at="2021-11-07T12:53:35 UTC" duration-ms="1827" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CCPA_TC_4_UI_of_CCPA_pop_up_for_patient_domain -->
-        <test-method is-config="true" signature="teardown(org.testng.ITestResult)[pri:0, instance:ccpa.testcases.HomepageTest@47d9a273]" started-at="2021-10-31T14:54:18 UTC" name="teardown" finished-at="2021-10-31T14:54:18 UTC" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="teardown(org.testng.ITestResult)[pri:0, instance:ccpa.testcases.HomepageTest@47d9a273]" started-at="2021-11-07T12:53:35 UTC" name="teardown" finished-at="2021-11-07T12:53:35 UTC" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -71,11 +71,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-        <test-method signature="CCPA_TC_5_Verify_Cookies_Saved_on_Accept_Button_Click_For_patient_domain()[pri:5, instance:ccpa.testcases.HomepageTest@47d9a273]" started-at="2021-10-31T14:54:18 UTC" name="CCPA_TC_5_Verify_Cookies_Saved_on_Accept_Button_Click_For_patient_domain" finished-at="2021-10-31T14:54:25 UTC" duration-ms="6295" status="PASS">
+        <test-method signature="CCPA_TC_5_Verify_Cookies_Saved_on_Accept_Button_Click_For_patient_domain()[pri:5, instance:ccpa.testcases.HomepageTest@47d9a273]" started-at="2021-11-07T12:53:35 UTC" name="CCPA_TC_5_Verify_Cookies_Saved_on_Accept_Button_Click_For_patient_domain" finished-at="2021-11-07T12:53:37 UTC" duration-ms="2319" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CCPA_TC_5_Verify_Cookies_Saved_on_Accept_Button_Click_For_patient_domain -->
-        <test-method is-config="true" signature="teardown(org.testng.ITestResult)[pri:0, instance:ccpa.testcases.HomepageTest@47d9a273]" started-at="2021-10-31T14:54:25 UTC" name="teardown" finished-at="2021-10-31T14:54:25 UTC" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="teardown(org.testng.ITestResult)[pri:0, instance:ccpa.testcases.HomepageTest@47d9a273]" started-at="2021-11-07T12:53:37 UTC" name="teardown" finished-at="2021-11-07T12:53:37 UTC" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -86,11 +86,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-        <test-method signature="CCPA_TC_6_Verify_CCPA_is_triggered_for_HCPsite()[pri:6, instance:ccpa.testcases.HomepageTest@47d9a273]" started-at="2021-10-31T14:54:25 UTC" name="CCPA_TC_6_Verify_CCPA_is_triggered_for_HCPsite" finished-at="2021-10-31T14:54:29 UTC" duration-ms="4614" status="PASS">
+        <test-method signature="CCPA_TC_6_Verify_CCPA_is_triggered_for_HCPsite()[pri:6, instance:ccpa.testcases.HomepageTest@47d9a273]" started-at="2021-11-07T12:53:37 UTC" name="CCPA_TC_6_Verify_CCPA_is_triggered_for_HCPsite" finished-at="2021-11-07T12:53:42 UTC" duration-ms="4643" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CCPA_TC_6_Verify_CCPA_is_triggered_for_HCPsite -->
-        <test-method is-config="true" signature="teardown(org.testng.ITestResult)[pri:0, instance:ccpa.testcases.HomepageTest@47d9a273]" started-at="2021-10-31T14:54:29 UTC" name="teardown" finished-at="2021-10-31T14:54:29 UTC" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="teardown(org.testng.ITestResult)[pri:0, instance:ccpa.testcases.HomepageTest@47d9a273]" started-at="2021-11-07T12:53:42 UTC" name="teardown" finished-at="2021-11-07T12:53:42 UTC" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -101,15 +101,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-        <test-method signature="CCPA_TC_7_Verify_CCPA_is_triggered_for_HCPsite()[pri:7, instance:ccpa.testcases.HomepageTest@47d9a273]" started-at="2021-10-31T14:54:29 UTC" name="CCPA_TC_7_Verify_CCPA_is_triggered_for_HCPsite" finished-at="2021-10-31T14:54:33 UTC" duration-ms="3111" status="PASS">
+        <test-method signature="CCPA_TC_7_Verify_CCPA_is_triggered_for_HCPsite()[pri:7, instance:ccpa.testcases.HomepageTest@47d9a273]" started-at="2021-11-07T12:53:42 UTC" name="CCPA_TC_7_Verify_CCPA_is_triggered_for_HCPsite" finished-at="2021-11-07T12:53:44 UTC" duration-ms="2251" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CCPA_TC_7_Verify_CCPA_is_triggered_for_HCPsite -->
-        <test-method signature="CCPA_TC_8_Verify_UI_of_CCPA_pop_up_for_HCPsite()[pri:8, instance:ccpa.testcases.HomepageTest@47d9a273]" started-at="2021-10-31T14:54:33 UTC" name="CCPA_TC_8_Verify_UI_of_CCPA_pop_up_for_HCPsite" finished-at="2021-10-31T14:54:36 UTC" duration-ms="3194" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- CCPA_TC_8_Verify_UI_of_CCPA_pop_up_for_HCPsite -->
-        <test-method is-config="true" signature="teardown(org.testng.ITestResult)[pri:0, instance:ccpa.testcases.HomepageTest@47d9a273]" started-at="2021-10-31T14:54:33 UTC" name="teardown" finished-at="2021-10-31T14:54:33 UTC" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="teardown(org.testng.ITestResult)[pri:0, instance:ccpa.testcases.HomepageTest@47d9a273]" started-at="2021-11-07T12:53:44 UTC" name="teardown" finished-at="2021-11-07T12:53:44 UTC" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -120,7 +116,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-        <test-method is-config="true" signature="teardown(org.testng.ITestResult)[pri:0, instance:ccpa.testcases.HomepageTest@47d9a273]" started-at="2021-10-31T14:54:36 UTC" name="teardown" finished-at="2021-10-31T14:54:36 UTC" duration-ms="3" status="PASS">
+        <test-method signature="CCPA_TC_8_Verify_UI_of_CCPA_pop_up_for_HCPsite()[pri:8, instance:ccpa.testcases.HomepageTest@47d9a273]" started-at="2021-11-07T12:53:44 UTC" name="CCPA_TC_8_Verify_UI_of_CCPA_pop_up_for_HCPsite" finished-at="2021-11-07T12:53:46 UTC" duration-ms="1619" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CCPA_TC_8_Verify_UI_of_CCPA_pop_up_for_HCPsite -->
+        <test-method is-config="true" signature="teardown(org.testng.ITestResult)[pri:0, instance:ccpa.testcases.HomepageTest@47d9a273]" started-at="2021-11-07T12:53:46 UTC" name="teardown" finished-at="2021-11-07T12:53:46 UTC" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -131,11 +131,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-        <test-method signature="CCPA_TC_9_Verify_Cookies_Saved_on_Accept_Button_Click_For_HCPSite()[pri:9, instance:ccpa.testcases.HomepageTest@47d9a273]" started-at="2021-10-31T14:54:36 UTC" name="CCPA_TC_9_Verify_Cookies_Saved_on_Accept_Button_Click_For_HCPSite" finished-at="2021-10-31T14:54:42 UTC" duration-ms="6218" status="PASS">
+        <test-method signature="CCPA_TC_9_Verify_Cookies_Saved_on_Accept_Button_Click_For_HCPSite()[pri:9, instance:ccpa.testcases.HomepageTest@47d9a273]" started-at="2021-11-07T12:53:46 UTC" name="CCPA_TC_9_Verify_Cookies_Saved_on_Accept_Button_Click_For_HCPSite" finished-at="2021-11-07T12:53:48 UTC" duration-ms="2546" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CCPA_TC_9_Verify_Cookies_Saved_on_Accept_Button_Click_For_HCPSite -->
-        <test-method is-config="true" signature="teardown(org.testng.ITestResult)[pri:0, instance:ccpa.testcases.HomepageTest@47d9a273]" started-at="2021-10-31T14:54:42 UTC" name="teardown" finished-at="2021-10-31T14:54:42 UTC" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="teardown(org.testng.ITestResult)[pri:0, instance:ccpa.testcases.HomepageTest@47d9a273]" started-at="2021-11-07T12:53:48 UTC" name="teardown" finished-at="2021-11-07T12:53:48 UTC" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -146,7 +146,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:ccpa.testcases.HomepageTest@47d9a273]" started-at="2021-10-31T14:54:42 UTC" name="teardown" finished-at="2021-10-31T14:54:42 UTC" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:ccpa.testcases.HomepageTest@47d9a273]" started-at="2021-11-07T12:53:48 UTC" name="teardown" finished-at="2021-11-07T12:53:50 UTC" duration-ms="2225" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
