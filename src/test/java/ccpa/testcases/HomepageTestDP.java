@@ -11,8 +11,10 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
 import org.testng.ITestContext;
 import org.testng.ITestResult;
+import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterSuite;
+import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.DataProvider;
@@ -23,6 +25,9 @@ import ccpa.pages.Homepage;
 import ccpa.pages.Homepage2;
 import ccpa.utilities.Util;
 
+import com.relevantcodes.extentreports.ExtentReports;
+import com.relevantcodes.extentreports.ExtentTest;
+import com.relevantcodes.extentreports.LogStatus;
 
 
 
@@ -34,10 +39,19 @@ public class HomepageTestDP extends Baseclass {
 	static Properties prop;
 	WebDriver driver;
 	public static ITestResult result;
+	static ExtentTest test;
+	static ExtentReports report;
 	
 	public HomepageTestDP()
 	{
 		super();
+	}
+	
+	@BeforeClass
+	public static void startTest()
+	{
+	report = new ExtentReports(System.getProperty("user.dir")+"\\test-output\\ExtentReportss\\ExtentReportResult.html");
+//	test = report.startTest("Launch URL : " + URL);
 	}
 	
 	@BeforeTest
@@ -73,6 +87,7 @@ public class HomepageTestDP extends Baseclass {
 	@Test(dataProvider="geturls",priority=1)
 	public void LaunchUrl(String URL,String PAGETITLE, String RUN,String NAME, String Assert_val, ITestContext context) throws InterruptedException
 	{
+		test = report.startTest("Launch URL : " + URL);
 		context.setAttribute("customTestName", URL);
 //		initialisation(URL);
 		System.setProperty("webdriver.chrome.driver","C:\\Users\\rahul.chadha\\Desktop\\BrowserDrivers\\chromedriver.exe");
@@ -85,6 +100,7 @@ public class HomepageTestDP extends Baseclass {
 		
 		
 //		String newurl=prop.getProperty("url1");
+		try {
 		System.out.println(URL +"  Launched");
 		Thread.sleep(3000);
 		if(!URL.contains("https://"))
@@ -184,6 +200,12 @@ public class HomepageTestDP extends Baseclass {
 ////			objutil.takeScreenShot(result1);
 //			e.printStackTrace();
 //		}
+			test.log(LogStatus.PASS, "Verifications PASSED for the specified URL");
+		} catch (Exception e) {
+//			objutil.takeScreenShot(result1);
+			test.log(LogStatus.FAIL, "Verifications FAILED for the specified URL");
+			e.printStackTrace();
+		}
 	}
 	
 	@AfterMethod
@@ -199,6 +221,13 @@ public class HomepageTestDP extends Baseclass {
 			objutil.takeScreenShot(result);
 			driver.close();
 			driver.quit();;
+	}
+	
+	@AfterClass
+	public static void endTest()
+	{
+	report.endTest(test);
+	report.flush();
 	}
 	
 	@AfterSuite
