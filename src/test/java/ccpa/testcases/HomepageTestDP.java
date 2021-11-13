@@ -87,7 +87,7 @@ public class HomepageTestDP extends Baseclass {
 	@Test(dataProvider="geturls",priority=1)
 	public void LaunchUrl(String URL,String PAGETITLE, String RUN,String NAME, String Assert_val, ITestContext context) throws InterruptedException
 	{
-		test = report.startTest("Launch URL : " + URL);
+		test = report.startTest("Launch "+ NAME +" : " + URL);
 		context.setAttribute("customTestName", URL);
 //		initialisation(URL);
 		System.setProperty("webdriver.chrome.driver","C:\\Users\\rahul.chadha\\Desktop\\BrowserDrivers\\chromedriver.exe");
