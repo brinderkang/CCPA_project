@@ -1,6 +1,7 @@
 package ccpa.utilities;
 
 import java.io.File;
+import java.io.IOException;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.Date;
@@ -11,6 +12,7 @@ import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.Cookie;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.io.FileHandler;
@@ -21,6 +23,14 @@ import ccpa.base.Baseclass;
 public class Util extends Baseclass {
 	public static long PAGE_LOAD_TIMEOUT=20;
 	public static long IMPLICIT_WAIT=10;
+	public static String TESTDATA_SHEET_PATH=System.getProperty("user.dir")+"\\src\\main\\java\\ccpa\\testdata\\TestDataCCPA.xlsx";
+	static Xlreader xls;
+	public static String urlutil;
+	
+	public Util(WebDriver driver)
+	{
+		this.driver=driver;
+	}
 
 	public void draganddrop(WebElement source,WebElement dest)
 	{
@@ -115,5 +125,45 @@ public class Util extends Baseclass {
 
 		}
 		}
+	
+//	Fetch one dimension test data from excel file
+	public static Object[][] getTestDataUrl(String sheetname) throws IOException
+	{
+		System.out.println(TESTDATA_SHEET_PATH);
+		xls=new Xlreader(TESTDATA_SHEET_PATH);
+		int rowcount=xls.getRowCount(sheetname);
+		int cellcount=xls.getCellCount(sheetname, 0);
+		int rows=0;
+		int x=0;
+		for(int y=0;y<=rowcount;y++)
+		{
+			String tRun=xls.getCellData(sheetname, "RUN", y);
+			if(tRun.equalsIgnoreCase("ON"))
+			{
+				rows=rows+1;
+			}
+		}
+		
+		Object[][] data = new Object[rows][1];
+		data = new Object[rows][cellcount];
+		for(int i=0;i<=rowcount;i++)
+			{
+			String tRun=xls.getCellData(sheetname, "RUN", i);
+			if(tRun.equalsIgnoreCase("ON"))			
+				{
+							
+				for(int k=0;k<cellcount;k++)
+					{
+						data[x][k]=xls.getCellData(sheetname, i, k).trim();
+						urlutil=xls.getCellData(sheetname, i, 0);
+						System.out.println(data[x][k]);						
+				 
+					}
+				x =x+1;
+				}
+			}
+		return data;
+		
+	}
 
 }

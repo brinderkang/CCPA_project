@@ -5,9 +5,9 @@
 <listeners>
 	<listener class-name="ccpa.extentreports.Extentreport_ccpa"/>
 </listeners>
-	<test name="Regression" preserve-order="true">
+	<test name="Regression" group-by-instances= "true" preserve-order="true">
 		<classes>
-			<class name ="ccpa.testcases.HomepageTest" ></class>
+			<class name ="ccpa.testcases.HomepageTestDP" ></class>
 		
 		</classes>
 	</test>

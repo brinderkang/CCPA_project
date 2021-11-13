@@ -6,16 +6,14 @@
   </listeners>
   <test thread-count="5" name="Regression(failed)">
     <classes>
-      <class name="ccpa.testcases.HomepageTest">
+      <class name="ccpa.testcases.HomepageTestDP">
         <methods>
-          <include name="CCPA_TC_9_Verify_Cookies_Saved_on_Accept_Button_Click_For_HCPSite"/>
-          <include name="CCPA_TC_6_Verify_CCPA_is_triggered_for_HCPsite"/>
-          <include name="CCPA_TC_8_Verify_UI_of_CCPA_pop_up_for_HCPsite"/>
           <include name="setUp"/>
+          <include name="LaunchUrl" invocation-numbers="0"/>
           <include name="teardown"/>
           <include name="teardown"/>
         </methods>
-      </class> <!-- ccpa.testcases.HomepageTest -->
+      </class> <!-- ccpa.testcases.HomepageTestDP -->
     </classes>
   </test> <!-- Regression(failed) -->
 </suite> <!-- Failed suite [CCPA] -->

@@ -46,7 +46,7 @@ public class HomepageTest extends Baseclass {
 		String newurl=prop.getProperty("url1");
 		initialisation(newurl);
 		objhomepage = new Homepage();
-		objutil = new Util();
+//		objutil = new Util();
 		
 	}
 	
