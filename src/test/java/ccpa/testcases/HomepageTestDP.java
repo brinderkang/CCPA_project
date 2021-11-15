@@ -128,6 +128,7 @@ public class HomepageTestDP extends Baseclass {
 			boolean flag1=objhomepage.cookiesContainer();
 			boolean exp_val=Boolean.parseBoolean(Assert_val);
 			Assert.assertEquals(flag1, exp_val);
+			test.log(LogStatus.PASS, "Cookies container present for specified URL");
 //		} catch (Exception e) {
 //			objutil.takeScreenShot(result1);
 //			e.printStackTrace();
@@ -137,6 +138,7 @@ public class HomepageTestDP extends Baseclass {
 			boolean flag2=objhomepage.uiCCPApopup();
 //			boolean exp_val=Boolean.parseBoolean(Assert_val);
 			Assert.assertEquals(flag2, exp_val);
+			test.log(LogStatus.PASS, "Header and required text is displaying for the specified URL");
 //		} catch (Exception e) {
 //			objutil.takeScreenShot(result1);
 //			e.printStackTrace();
@@ -148,10 +150,12 @@ public class HomepageTestDP extends Baseclass {
 			if(flag3>=10)
 			{
 				Assert.assertTrue(true);
+				test.log(LogStatus.PASS, "Cokies saved in the browser for the specified URL");
 			}
 			else
 			{
 				Assert.assertTrue(false);
+				test.log(LogStatus.FAIL, "Cokies  not saved in the browser for the specified URL");
 			}
 //		} catch (Exception e) {
 //			objutil.takeScreenShot(result1);
@@ -200,7 +204,7 @@ public class HomepageTestDP extends Baseclass {
 ////			objutil.takeScreenShot(result1);
 //			e.printStackTrace();
 //		}
-			test.log(LogStatus.PASS, "Verifications PASSED for the specified URL");
+			test.log(LogStatus.PASS, "All Verifications PASSED for the specified URL");
 		} catch (Exception e) {
 //			objutil.takeScreenShot(result1);
 			test.log(LogStatus.FAIL, "Verifications FAILED for the specified URL");
@@ -218,7 +222,12 @@ public class HomepageTestDP extends Baseclass {
 //			else {
 //				System.out.println("No data provider for this method");
 //			}
-			objutil.takeScreenShot(result);
+			if(ITestResult.FAILURE== result.getStatus())
+			{
+				test.log(LogStatus.FAIL, "Verifications FAILED for the specified URL");
+				objutil.takeScreenShot(result);
+			}
+			
 			driver.close();
 			driver.quit();;
 	}
