@@ -24,7 +24,7 @@ public class Util extends Baseclass {
 	public static long PAGE_LOAD_TIMEOUT=20;
 	public static long IMPLICIT_WAIT=10;
 //	public static String TESTDATA_SHEET_PATH="C:\\Users\\rahul.chadha\\Desktop\\EclipseWorkspace\\CCPA_project\\src\\main\\java\\ccpa\\testdata\\TestDataCCPA2.xlsx";
-	public static String TESTDATA_SHEET_PATH=System.getProperty("user.dir")+"/src/main/java/ccpa/testdata/TestDataCCPA2.xlsx";
+	public static String TESTDATA_SHEET_PATH=System.getProperty("user.dir")+"/src/main/java/ccpa/testdata/TestDataCCPA.xlsx";
 	
 	
 	static Xlreader xls;
