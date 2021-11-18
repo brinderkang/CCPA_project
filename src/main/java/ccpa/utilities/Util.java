@@ -23,7 +23,10 @@ import ccpa.base.Baseclass;
 public class Util extends Baseclass {
 	public static long PAGE_LOAD_TIMEOUT=20;
 	public static long IMPLICIT_WAIT=10;
-	public static String TESTDATA_SHEET_PATH="C:\\Users\\rahul.chadha\\Desktop\\EclipseWorkspace\\CCPA_project\\src\\main\\java\\ccpa\\testdata\\TestDataCCPA.xlsx";
+//	public static String TESTDATA_SHEET_PATH="C:\\Users\\rahul.chadha\\Desktop\\EclipseWorkspace\\CCPA_project\\src\\main\\java\\ccpa\\testdata\\TestDataCCPA2.xlsx";
+	public static String TESTDATA_SHEET_PATH=System.getProperty("user.dir")+"/src/main/java/ccpa/testdata/TestDataCCPA2.xlsx";
+	
+	
 	static Xlreader xls;
 	public static String urlutil;
 	
@@ -126,10 +129,30 @@ public class Util extends Baseclass {
 		}
 		}
 	
+//	Attach screen shot in extent report
+//	take screen shot of failed test case
+	public String takeScreenShotextent(String imagename){
+		String errflpath = null;		
+		try{
+		TakesScreenshot ts= (TakesScreenshot)driver;
+
+		File source=ts.getScreenshotAs(OutputType.FILE);
+		File Dest = new File(System.getProperty("user.dir")+"/src/main/java/ccpa/screenshotsextent/"+imagename+Fn_DateTime()+".png");
+		errflpath = Dest.getAbsolutePath();
+		FileUtils.copyFile(source, Dest);
+		}
+		catch(Exception e)
+		{
+			System.out.println("Exception while taking screenshot for extent");
+			return "Exception while taking screenshot";
+		}		
+		return errflpath;
+		}
+	
 //	Fetch one dimension test data from excel file
 	public static Object[][] getTestDataUrl(String sheetname) throws IOException
 	{
-		System.out.println(TESTDATA_SHEET_PATH);
+//		System.out.println(TESTDATA_SHEET_PATH);
 		xls=new Xlreader(TESTDATA_SHEET_PATH);
 		int rowcount=xls.getRowCount(sheetname);
 		int cellcount=xls.getCellCount(sheetname, 0);
@@ -156,7 +179,7 @@ public class Util extends Baseclass {
 					{
 						data[x][k]=xls.getCellData(sheetname, i, k).trim();
 						urlutil=xls.getCellData(sheetname, i, 0);
-						System.out.println(data[x][k]);						
+//						System.out.println(data[x][k]);						
 				 
 					}
 				x =x+1;

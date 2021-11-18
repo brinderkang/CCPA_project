@@ -20,6 +20,7 @@ public class Homepage2 {
 	@FindBy(xpath="//*[@id='onetrust-policy-text']")
 	WebElement ccpaText;
 	@FindBy(xpath="//*[text()='privacy policy.']")
+//	@FindBy(xpath="(//*[text()='privacy policy.' or text()='Privacy Policy.'])[2]")
 	WebElement privacyPolicyLink;
 	@FindBy(xpath="//*[@id='onetrust-pc-btn-handler']")
 	WebElement cookiesPreferences;
@@ -66,7 +67,7 @@ public class Homepage2 {
 		privacyPolicyLink.isDisplayed();
 		cookiesPreferences.isDisplayed();
 		String actualText= ccpaText.getText();
-		System.out.println(actualText);
+//		System.out.println(actualText);
 		Thread.sleep(1000);
 		if(expectedText.equals(actualText))
 		{

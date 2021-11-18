@@ -9,7 +9,7 @@
       <class name="ccpa.testcases.HomepageTestDP">
         <methods>
           <include name="setUp"/>
-          <include name="LaunchUrl" invocation-numbers="39 43"/>
+          <include name="LaunchUrl" invocation-numbers="41 45"/>
           <include name="endTest"/>
           <include name="teardown"/>
           <include name="teardown"/>
