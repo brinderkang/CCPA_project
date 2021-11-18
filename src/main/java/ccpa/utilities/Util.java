@@ -84,14 +84,14 @@ public class Util extends Baseclass {
 	{
 		Set<Cookie> allcookies= driver.manage().getCookies();
 		int cookiescount = allcookies.size();
-		for(Cookie cookie:allcookies)
-		{
-			System.out.println("Name : "+ cookie.getName());
-			System.out.println("Domain : "+ cookie.getDomain());
-			System.out.println("Path : "+ cookie.getPath());
-			System.out.println("Value : "+ cookie.getValue());
-			System.out.println("-------------------------------------");
-		}
+//		for(Cookie cookie:allcookies)
+//		{
+//			System.out.println("Name : "+ cookie.getName());
+//			System.out.println("Domain : "+ cookie.getDomain());
+//			System.out.println("Path : "+ cookie.getPath());
+//			System.out.println("Value : "+ cookie.getValue());
+//			System.out.println("-------------------------------------");
+//		}
 		return cookiescount;
 	}
 	
