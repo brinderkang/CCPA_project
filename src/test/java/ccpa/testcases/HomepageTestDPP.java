@@ -8,6 +8,7 @@ import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.Assert;
 import org.testng.ITestContext;
 import org.testng.ITestResult;
@@ -93,6 +94,8 @@ public class HomepageTestDPP extends Baseclass {
 		WebDriverManager.chromedriver().setup();
 //		System.setProperty("webdriver.chrome.driver","C:\\Users\\rahul.chadha\\Desktop\\BrowserDrivers\\chromedriver.exe");
 		driver=new ChromeDriver();
+//		WebDriverManager.firefoxdriver().setup();
+//		driver=new FirefoxDriver();
 		
 		driver.manage().window().maximize();
 		driver.manage().deleteAllCookies();
