@@ -22,7 +22,11 @@ public class Homepage2 {
 	@FindBy(xpath="//*[text()='privacy policy.']")
 //	@FindBy(xpath="(//*[text()='privacy policy.' or text()='Privacy Policy.'])[2]")
 	WebElement privacyPolicyLink;
-	@FindBy(xpath="//*[@id='onetrust-pc-btn-handler']")
+	@FindBy(xpath="(//*[text()='Privacy Policy.'])[2]")
+	WebElement PrivacyPolicyLink;
+	@FindBy(xpath="//*[text()='Privacy Policy. ']")
+	WebElement PrivacyPolicyLink2;
+	@FindBy(xpath="//*[@id='onetrust-pc-btn-handler']")	
 	WebElement cookiesPreferences;
 	@FindBy(xpath="//*[@id='onetrust-accept-btn-handler']")
 	WebElement acceptButton;
@@ -62,14 +66,24 @@ public class Homepage2 {
 	public boolean uiCCPApopup() throws InterruptedException
 	{
 		String expectedText="This website may use certain types of cookies and other technologies to personalize content and to show more personalized ads. By clicking “Accept”, you understand that you are directing Genentech to disclose data that may be considered personal information to third parties for these purposes. For more details on what information we collect, why we collect it and to whom we disclose it, please visit our privacy policy.";
+		String expectedText2="This website may use certain types of cookies and other technologies to personalize content and to show more personalized ads. By clicking “Accept”, you understand that you are directing Genentech to disclose data that may be considered personal information to third parties for these purposes. For more details on what information we collect, why we collect it, and to whom we disclose it, please visit our Privacy Policy.";
+		String expectedText3="This website may use certain types of cookies and other technologies to personalize content and to show more personalized ads. By clicking “Accept”, you understand that you are directing Genentech and AbbVie to disclose data that may be considered personal information to third parties for these purposes. For more details on what information we collect, why we collect it and to whom we disclose it, please visit our Privacy Policy.";
 		ouruseofcookies.isDisplayed();
-		ccpaText.isDisplayed();
-		privacyPolicyLink.isDisplayed();
+//		ccpaText.isDisplayed();
+		try {
+			privacyPolicyLink.isDisplayed();
+		} catch (Exception e) {
+			try {
+				PrivacyPolicyLink.isDisplayed();
+			} catch (Exception e1) {
+				PrivacyPolicyLink2.isDisplayed();
+			}
+		}
 		cookiesPreferences.isDisplayed();
 		String actualText= ccpaText.getText();
 //		System.out.println(actualText);
 		Thread.sleep(1000);
-		if(expectedText.equals(actualText))
+		if((expectedText.equalsIgnoreCase(actualText))||(expectedText2.equalsIgnoreCase(actualText))|(expectedText3.equalsIgnoreCase(actualText)))
 		{
 			return true;
 		}

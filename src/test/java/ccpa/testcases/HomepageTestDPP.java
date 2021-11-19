@@ -116,7 +116,11 @@ public class HomepageTestDPP extends Baseclass {
 		objutil = new Util(driver);
 
 		
-
+		if(URL.equalsIgnoreCase("https://www.her2treatment.com"))
+		{
+			Thread.sleep(4000);
+		}
+		
 			boolean flag1=objhomepage.cookiesContainer();
 			boolean exp_val=Boolean.parseBoolean(Assert_val);
 			Assert.assertEquals(flag1, exp_val);

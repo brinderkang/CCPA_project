@@ -6,16 +6,16 @@
   </listeners>
   <test thread-count="5" name="Regression(failed)">
     <classes>
-      <class name="ccpa.testcases.HomepageTestDP">
+      <class name="ccpa.testcases.HomepageTestDPP">
         <methods>
-          <include name="setUp"/>
-          <include name="LaunchUrl" invocation-numbers="41 45"/>
-          <include name="endTest"/>
-          <include name="teardown"/>
-          <include name="teardown"/>
           <include name="startTest"/>
+          <include name="setUp"/>
+          <include name="LaunchUrl" invocation-numbers="7"/>
+          <include name="teardown"/>
+          <include name="teardown"/>
+          <include name="endTest"/>
         </methods>
-      </class> <!-- ccpa.testcases.HomepageTestDP -->
+      </class> <!-- ccpa.testcases.HomepageTestDPP -->
     </classes>
   </test> <!-- Regression(failed) -->
 </suite> <!-- Failed suite [CCPA] -->
