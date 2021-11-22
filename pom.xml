@@ -84,7 +84,7 @@
         <configuration>
           <verbose>true</verbose>
           <fork>true</fork>
-          <executable>C:\Program Files\Java\jdk1.8.0_301\bin\javac</executable>
+          <executable>/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.302.b08-0.amzn2.0.1.x86_64/jre/bin/java</executable>
         </configuration>
       </plugin>
  
