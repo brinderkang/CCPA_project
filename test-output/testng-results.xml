@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="13" passed="12" failed="1" skipped="0">
+<testng-results ignored="0" total="11" passed="10" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-11-19T09:00:51 UTC" name="CCPA" finished-at="2021-11-19T09:06:36 UTC" duration-ms="344272">
+  <suite started-at="2021-11-22T09:28:49 UTC" name="Default suite" finished-at="2021-11-22T09:32:07 UTC" duration-ms="198328">
     <groups>
     </groups>
-    <test started-at="2021-11-19T09:00:51 UTC" name="Regression" finished-at="2021-11-19T09:06:36 UTC" duration-ms="344272">
+    <test started-at="2021-11-22T09:28:49 UTC" name="Default test" finished-at="2021-11-22T09:32:07 UTC" duration-ms="198328">
       <class name="ccpa.testcases.HomepageTestDPP">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:ccpa.testcases.HomepageTestDPP@7db12bb6]" started-at="2021-11-19T09:00:51 UTC" name="setUp" finished-at="2021-11-19T09:00:51 UTC" duration-ms="20" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:ccpa.testcases.HomepageTestDPP@273e7444]" started-at="2021-11-22T09:28:49 UTC" name="setUp" finished-at="2021-11-22T09:28:49 UTC" duration-ms="10" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method is-config="true" signature="startTest()[pri:0, instance:ccpa.testcases.HomepageTestDPP@7db12bb6]" started-at="2021-11-19T09:00:51 UTC" name="startTest" finished-at="2021-11-19T09:00:52 UTC" duration-ms="377" status="PASS">
+        <test-method is-config="true" signature="startTest()[pri:0, instance:ccpa.testcases.HomepageTestDPP@273e7444]" started-at="2021-11-22T09:28:49 UTC" name="startTest" finished-at="2021-11-22T09:28:49 UTC" duration-ms="302" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startTest -->
-        <test-method signature="LaunchUrl(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,org.testng.ITestContext)[pri:1, instance:ccpa.testcases.HomepageTestDPP@7db12bb6]" started-at="2021-11-19T09:00:53 UTC" name="LaunchUrl" data-provider="geturls" finished-at="2021-11-19T09:01:14 UTC" duration-ms="21172" status="PASS">
+        <test-method signature="LaunchUrl(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,org.testng.ITestContext)[pri:1, instance:ccpa.testcases.HomepageTestDPP@273e7444]" started-at="2021-11-22T09:28:50 UTC" name="LaunchUrl" data-provider="geturls" finished-at="2021-11-22T09:29:09 UTC" duration-ms="19087" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -44,30 +44,30 @@
             </param>
             <param index="5">
               <value>
-                <![CDATA[org.testng.TestRunner@245a26e1]]>
+                <![CDATA[org.testng.TestRunner@3af4e0bf]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LaunchUrl -->
-        <test-method is-config="true" signature="teardown(org.testng.ITestResult,org.testng.ITestContext)[pri:0, instance:ccpa.testcases.HomepageTestDPP@7db12bb6]" started-at="2021-11-19T09:01:14 UTC" name="teardown" finished-at="2021-11-19T09:01:15 UTC" duration-ms="774" status="PASS">
+        <test-method is-config="true" signature="teardown(org.testng.ITestResult,org.testng.ITestContext)[pri:0, instance:ccpa.testcases.HomepageTestDPP@273e7444]" started-at="2021-11-22T09:29:09 UTC" name="teardown" finished-at="2021-11-22T09:29:10 UTC" duration-ms="357" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=aem.gene.com status=SUCCESS method=HomepageTestDPP.LaunchUrl(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,org.testng.ITestContext)[pri:1, instance:ccpa.testcases.HomepageTestDPP@7db12bb6] output={null}]]]>
+                <![CDATA[[TestResult name=aem.gene.com status=SUCCESS method=HomepageTestDPP.LaunchUrl(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,org.testng.ITestContext)[pri:1, instance:ccpa.testcases.HomepageTestDPP@273e7444] output={null}]]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[org.testng.TestRunner@245a26e1]]>
+                <![CDATA[org.testng.TestRunner@3af4e0bf]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-        <test-method signature="LaunchUrl(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,org.testng.ITestContext)[pri:1, instance:ccpa.testcases.HomepageTestDPP@7db12bb6]" started-at="2021-11-19T09:01:15 UTC" name="LaunchUrl" data-provider="geturls" finished-at="2021-11-19T09:01:37 UTC" duration-ms="22244" status="PASS">
+        <test-method signature="LaunchUrl(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,org.testng.ITestContext)[pri:1, instance:ccpa.testcases.HomepageTestDPP@273e7444]" started-at="2021-11-22T09:29:10 UTC" name="LaunchUrl" data-provider="geturls" finished-at="2021-11-22T09:29:27 UTC" duration-ms="17098" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -96,30 +96,30 @@
             </param>
             <param index="5">
               <value>
-                <![CDATA[org.testng.TestRunner@245a26e1]]>
+                <![CDATA[org.testng.TestRunner@3af4e0bf]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LaunchUrl -->
-        <test-method is-config="true" signature="teardown(org.testng.ITestResult,org.testng.ITestContext)[pri:0, instance:ccpa.testcases.HomepageTestDPP@7db12bb6]" started-at="2021-11-19T09:01:37 UTC" name="teardown" finished-at="2021-11-19T09:01:38 UTC" duration-ms="794" status="PASS">
+        <test-method is-config="true" signature="teardown(org.testng.ITestResult,org.testng.ITestContext)[pri:0, instance:ccpa.testcases.HomepageTestDPP@273e7444]" started-at="2021-11-22T09:29:27 UTC" name="teardown" finished-at="2021-11-22T09:29:27 UTC" duration-ms="362" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=aem-legacy.gene.com status=SUCCESS method=HomepageTestDPP.LaunchUrl(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,org.testng.ITestContext)[pri:1, instance:ccpa.testcases.HomepageTestDPP@7db12bb6] output={null}]]]>
+                <![CDATA[[TestResult name=aem-legacy.gene.com status=SUCCESS method=HomepageTestDPP.LaunchUrl(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,org.testng.ITestContext)[pri:1, instance:ccpa.testcases.HomepageTestDPP@273e7444] output={null}]]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[org.testng.TestRunner@245a26e1]]>
+                <![CDATA[org.testng.TestRunner@3af4e0bf]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-        <test-method signature="LaunchUrl(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,org.testng.ITestContext)[pri:1, instance:ccpa.testcases.HomepageTestDPP@7db12bb6]" started-at="2021-11-19T09:01:38 UTC" name="LaunchUrl" data-provider="geturls" finished-at="2021-11-19T09:01:55 UTC" duration-ms="17009" status="PASS">
+        <test-method signature="LaunchUrl(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,org.testng.ITestContext)[pri:1, instance:ccpa.testcases.HomepageTestDPP@273e7444]" started-at="2021-11-22T09:29:27 UTC" name="LaunchUrl" data-provider="geturls" finished-at="2021-11-22T09:29:44 UTC" duration-ms="17056" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -148,82 +148,30 @@
             </param>
             <param index="5">
               <value>
-                <![CDATA[org.testng.TestRunner@245a26e1]]>
+                <![CDATA[org.testng.TestRunner@3af4e0bf]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LaunchUrl -->
-        <test-method is-config="true" signature="teardown(org.testng.ITestResult,org.testng.ITestContext)[pri:0, instance:ccpa.testcases.HomepageTestDPP@7db12bb6]" started-at="2021-11-19T09:01:55 UTC" name="teardown" finished-at="2021-11-19T09:01:56 UTC" duration-ms="679" status="PASS">
+        <test-method is-config="true" signature="teardown(org.testng.ITestResult,org.testng.ITestContext)[pri:0, instance:ccpa.testcases.HomepageTestDPP@273e7444]" started-at="2021-11-22T09:29:44 UTC" name="teardown" finished-at="2021-11-22T09:29:45 UTC" duration-ms="436" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=https://www.actemrainfo.com/ status=SUCCESS method=HomepageTestDPP.LaunchUrl(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,org.testng.ITestContext)[pri:1, instance:ccpa.testcases.HomepageTestDPP@7db12bb6] output={null}]]]>
+                <![CDATA[[TestResult name=https://www.actemrainfo.com/ status=SUCCESS method=HomepageTestDPP.LaunchUrl(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,org.testng.ITestContext)[pri:1, instance:ccpa.testcases.HomepageTestDPP@273e7444] output={null}]]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[org.testng.TestRunner@245a26e1]]>
+                <![CDATA[org.testng.TestRunner@3af4e0bf]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-        <test-method signature="LaunchUrl(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,org.testng.ITestContext)[pri:1, instance:ccpa.testcases.HomepageTestDPP@7db12bb6]" started-at="2021-11-19T09:01:56 UTC" name="LaunchUrl" data-provider="geturls" finished-at="2021-11-19T09:02:26 UTC" duration-ms="30628" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[www.cancerscreenweek.org]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[ON]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[URL12]]>
-              </value>
-            </param>
-            <param index="4">
-              <value>
-                <![CDATA[true]]>
-              </value>
-            </param>
-            <param index="5">
-              <value>
-                <![CDATA[org.testng.TestRunner@245a26e1]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- LaunchUrl -->
-        <test-method is-config="true" signature="teardown(org.testng.ITestResult,org.testng.ITestContext)[pri:0, instance:ccpa.testcases.HomepageTestDPP@7db12bb6]" started-at="2021-11-19T09:02:26 UTC" name="teardown" finished-at="2021-11-19T09:02:27 UTC" duration-ms="799" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=www.cancerscreenweek.org status=SUCCESS method=HomepageTestDPP.LaunchUrl(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,org.testng.ITestContext)[pri:1, instance:ccpa.testcases.HomepageTestDPP@7db12bb6] output={null}]]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[org.testng.TestRunner@245a26e1]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardown -->
-        <test-method signature="LaunchUrl(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,org.testng.ITestContext)[pri:1, instance:ccpa.testcases.HomepageTestDPP@7db12bb6]" started-at="2021-11-19T09:02:27 UTC" name="LaunchUrl" data-provider="geturls" finished-at="2021-11-19T09:02:50 UTC" duration-ms="22927" status="PASS">
+        <test-method signature="LaunchUrl(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,org.testng.ITestContext)[pri:1, instance:ccpa.testcases.HomepageTestDPP@273e7444]" started-at="2021-11-22T09:29:45 UTC" name="LaunchUrl" data-provider="geturls" finished-at="2021-11-22T09:30:04 UTC" duration-ms="19122" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -252,30 +200,30 @@
             </param>
             <param index="5">
               <value>
-                <![CDATA[org.testng.TestRunner@245a26e1]]>
+                <![CDATA[org.testng.TestRunner@3af4e0bf]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LaunchUrl -->
-        <test-method is-config="true" signature="teardown(org.testng.ITestResult,org.testng.ITestContext)[pri:0, instance:ccpa.testcases.HomepageTestDPP@7db12bb6]" started-at="2021-11-19T09:02:50 UTC" name="teardown" finished-at="2021-11-19T09:02:53 UTC" duration-ms="3244" status="PASS">
+        <test-method is-config="true" signature="teardown(org.testng.ITestResult,org.testng.ITestContext)[pri:0, instance:ccpa.testcases.HomepageTestDPP@273e7444]" started-at="2021-11-22T09:30:04 UTC" name="teardown" finished-at="2021-11-22T09:30:04 UTC" duration-ms="585" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=www.emicizumabinfo.com status=SUCCESS method=HomepageTestDPP.LaunchUrl(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,org.testng.ITestContext)[pri:1, instance:ccpa.testcases.HomepageTestDPP@7db12bb6] output={null}]]]>
+                <![CDATA[[TestResult name=www.emicizumabinfo.com status=SUCCESS method=HomepageTestDPP.LaunchUrl(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,org.testng.ITestContext)[pri:1, instance:ccpa.testcases.HomepageTestDPP@273e7444] output={null}]]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[org.testng.TestRunner@245a26e1]]>
+                <![CDATA[org.testng.TestRunner@3af4e0bf]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-        <test-method signature="LaunchUrl(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,org.testng.ITestContext)[pri:1, instance:ccpa.testcases.HomepageTestDPP@7db12bb6]" started-at="2021-11-19T09:02:53 UTC" name="LaunchUrl" data-provider="geturls" finished-at="2021-11-19T09:03:10 UTC" duration-ms="16886" status="PASS">
+        <test-method signature="LaunchUrl(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,org.testng.ITestContext)[pri:1, instance:ccpa.testcases.HomepageTestDPP@273e7444]" started-at="2021-11-22T09:30:04 UTC" name="LaunchUrl" data-provider="geturls" finished-at="2021-11-22T09:30:22 UTC" duration-ms="17249" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -304,34 +252,86 @@
             </param>
             <param index="5">
               <value>
-                <![CDATA[org.testng.TestRunner@245a26e1]]>
+                <![CDATA[org.testng.TestRunner@3af4e0bf]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LaunchUrl -->
-        <test-method is-config="true" signature="teardown(org.testng.ITestResult,org.testng.ITestContext)[pri:0, instance:ccpa.testcases.HomepageTestDPP@7db12bb6]" started-at="2021-11-19T09:03:10 UTC" name="teardown" finished-at="2021-11-19T09:03:12 UTC" duration-ms="1550" status="PASS">
+        <test-method is-config="true" signature="teardown(org.testng.ITestResult,org.testng.ITestContext)[pri:0, instance:ccpa.testcases.HomepageTestDPP@273e7444]" started-at="2021-11-22T09:30:22 UTC" name="teardown" finished-at="2021-11-22T09:30:22 UTC" duration-ms="287" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=www.genentech-medicines.com status=SUCCESS method=HomepageTestDPP.LaunchUrl(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,org.testng.ITestContext)[pri:1, instance:ccpa.testcases.HomepageTestDPP@7db12bb6] output={null}]]]>
+                <![CDATA[[TestResult name=www.genentech-medicines.com status=SUCCESS method=HomepageTestDPP.LaunchUrl(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,org.testng.ITestContext)[pri:1, instance:ccpa.testcases.HomepageTestDPP@273e7444] output={null}]]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[org.testng.TestRunner@245a26e1]]>
+                <![CDATA[org.testng.TestRunner@3af4e0bf]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-        <test-method signature="LaunchUrl(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,org.testng.ITestContext)[pri:1, instance:ccpa.testcases.HomepageTestDPP@7db12bb6]" started-at="2021-11-19T09:03:12 UTC" name="LaunchUrl" data-provider="geturls" finished-at="2021-11-19T09:04:00 UTC" duration-ms="47768" status="PASS">
+        <test-method signature="LaunchUrl(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,org.testng.ITestContext)[pri:1, instance:ccpa.testcases.HomepageTestDPP@273e7444]" started-at="2021-11-22T09:30:22 UTC" name="LaunchUrl" data-provider="geturls" finished-at="2021-11-22T09:30:36 UTC" duration-ms="14125" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[https://www.her2treatment.com]]>
+                <![CDATA[www.hemlibra-hcp.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[ON]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[URL41]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[true]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[org.testng.TestRunner@3af4e0bf]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LaunchUrl -->
+        <test-method is-config="true" signature="teardown(org.testng.ITestResult,org.testng.ITestContext)[pri:0, instance:ccpa.testcases.HomepageTestDPP@273e7444]" started-at="2021-11-22T09:30:36 UTC" name="teardown" finished-at="2021-11-22T09:30:36 UTC" duration-ms="331" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=www.hemlibra-hcp.com status=SUCCESS method=HomepageTestDPP.LaunchUrl(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,org.testng.ITestContext)[pri:1, instance:ccpa.testcases.HomepageTestDPP@273e7444] output={null}]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[org.testng.TestRunner@3af4e0bf]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method signature="LaunchUrl(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,org.testng.ITestContext)[pri:1, instance:ccpa.testcases.HomepageTestDPP@273e7444]" started-at="2021-11-22T09:30:36 UTC" name="LaunchUrl" data-provider="geturls" finished-at="2021-11-22T09:30:56 UTC" duration-ms="19735" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[www.her2treatment.com]]>
               </value>
             </param>
             <param index="1">
@@ -356,59 +356,7 @@
             </param>
             <param index="5">
               <value>
-                <![CDATA[org.testng.TestRunner@245a26e1]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- LaunchUrl -->
-        <test-method is-config="true" signature="teardown(org.testng.ITestResult,org.testng.ITestContext)[pri:0, instance:ccpa.testcases.HomepageTestDPP@7db12bb6]" started-at="2021-11-19T09:04:00 UTC" name="teardown" finished-at="2021-11-19T09:04:21 UTC" duration-ms="21208" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=https://www.her2treatment.com status=SUCCESS method=HomepageTestDPP.LaunchUrl(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,org.testng.ITestContext)[pri:1, instance:ccpa.testcases.HomepageTestDPP@7db12bb6] output={null}]]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[org.testng.TestRunner@245a26e1]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardown -->
-        <test-method signature="LaunchUrl(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,org.testng.ITestContext)[pri:1, instance:ccpa.testcases.HomepageTestDPP@7db12bb6]" started-at="2021-11-19T09:04:21 UTC" name="LaunchUrl" data-provider="geturls" finished-at="2021-11-19T09:04:36 UTC" duration-ms="14763" status="FAIL">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[www.herconnection.com]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[ON]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[URL46]]>
-              </value>
-            </param>
-            <param index="4">
-              <value>
-                <![CDATA[true]]>
-              </value>
-            </param>
-            <param index="5">
-              <value>
-                <![CDATA[org.testng.TestRunner@245a26e1]]>
+                <![CDATA[org.testng.TestRunner@3af4e0bf]]>
               </value>
             </param>
           </params>
@@ -424,7 +372,7 @@ at org.testng.Assert.assertEqualsImpl(Assert.java:140)
 at org.testng.Assert.assertEquals(Assert.java:122)
 at org.testng.Assert.assertEquals(Assert.java:819)
 at org.testng.Assert.assertEquals(Assert.java:829)
-at ccpa.testcases.HomepageTestDPP.LaunchUrl(HomepageTestDPP.java:131)
+at ccpa.testcases.HomepageTestDPP.LaunchUrl(HomepageTestDPP.java:132)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -459,23 +407,23 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LaunchUrl -->
-        <test-method is-config="true" signature="teardown(org.testng.ITestResult,org.testng.ITestContext)[pri:0, instance:ccpa.testcases.HomepageTestDPP@7db12bb6]" started-at="2021-11-19T09:04:36 UTC" name="teardown" finished-at="2021-11-19T09:04:37 UTC" duration-ms="1310" status="PASS">
+        <test-method is-config="true" signature="teardown(org.testng.ITestResult,org.testng.ITestContext)[pri:0, instance:ccpa.testcases.HomepageTestDPP@273e7444]" started-at="2021-11-22T09:30:56 UTC" name="teardown" finished-at="2021-11-22T09:30:57 UTC" duration-ms="614" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=www.herconnection.com status=FAILURE method=HomepageTestDPP.LaunchUrl(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,org.testng.ITestContext)[pri:1, instance:ccpa.testcases.HomepageTestDPP@7db12bb6] output={null}]]]>
+                <![CDATA[[TestResult name=www.her2treatment.com status=FAILURE method=HomepageTestDPP.LaunchUrl(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,org.testng.ITestContext)[pri:1, instance:ccpa.testcases.HomepageTestDPP@273e7444] output={null}]]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[org.testng.TestRunner@245a26e1]]>
+                <![CDATA[org.testng.TestRunner@3af4e0bf]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-        <test-method signature="LaunchUrl(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,org.testng.ITestContext)[pri:1, instance:ccpa.testcases.HomepageTestDPP@7db12bb6]" started-at="2021-11-19T09:04:37 UTC" name="LaunchUrl" data-provider="geturls" finished-at="2021-11-19T09:04:54 UTC" duration-ms="17164" status="PASS">
+        <test-method signature="LaunchUrl(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,org.testng.ITestContext)[pri:1, instance:ccpa.testcases.HomepageTestDPP@273e7444]" started-at="2021-11-22T09:30:57 UTC" name="LaunchUrl" data-provider="geturls" finished-at="2021-11-22T09:31:14 UTC" duration-ms="16962" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -504,30 +452,30 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
             </param>
             <param index="5">
               <value>
-                <![CDATA[org.testng.TestRunner@245a26e1]]>
+                <![CDATA[org.testng.TestRunner@3af4e0bf]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LaunchUrl -->
-        <test-method is-config="true" signature="teardown(org.testng.ITestResult,org.testng.ITestContext)[pri:0, instance:ccpa.testcases.HomepageTestDPP@7db12bb6]" started-at="2021-11-19T09:04:54 UTC" name="teardown" finished-at="2021-11-19T09:04:55 UTC" duration-ms="758" status="PASS">
+        <test-method is-config="true" signature="teardown(org.testng.ITestResult,org.testng.ITestContext)[pri:0, instance:ccpa.testcases.HomepageTestDPP@273e7444]" started-at="2021-11-22T09:31:14 UTC" name="teardown" finished-at="2021-11-22T09:31:14 UTC" duration-ms="293" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=www.mytactictrial.com status=SUCCESS method=HomepageTestDPP.LaunchUrl(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,org.testng.ITestContext)[pri:1, instance:ccpa.testcases.HomepageTestDPP@7db12bb6] output={null}]]]>
+                <![CDATA[[TestResult name=www.mytactictrial.com status=SUCCESS method=HomepageTestDPP.LaunchUrl(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,org.testng.ITestContext)[pri:1, instance:ccpa.testcases.HomepageTestDPP@273e7444] output={null}]]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[org.testng.TestRunner@245a26e1]]>
+                <![CDATA[org.testng.TestRunner@3af4e0bf]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-        <test-method signature="LaunchUrl(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,org.testng.ITestContext)[pri:1, instance:ccpa.testcases.HomepageTestDPP@7db12bb6]" started-at="2021-11-19T09:04:55 UTC" name="LaunchUrl" data-provider="geturls" finished-at="2021-11-19T09:05:12 UTC" duration-ms="16989" status="PASS">
+        <test-method signature="LaunchUrl(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,org.testng.ITestContext)[pri:1, instance:ccpa.testcases.HomepageTestDPP@273e7444]" started-at="2021-11-22T09:31:14 UTC" name="LaunchUrl" data-provider="geturls" finished-at="2021-11-22T09:31:31 UTC" duration-ms="16798" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -556,30 +504,30 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
             </param>
             <param index="5">
               <value>
-                <![CDATA[org.testng.TestRunner@245a26e1]]>
+                <![CDATA[org.testng.TestRunner@3af4e0bf]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LaunchUrl -->
-        <test-method is-config="true" signature="teardown(org.testng.ITestResult,org.testng.ITestContext)[pri:0, instance:ccpa.testcases.HomepageTestDPP@7db12bb6]" started-at="2021-11-19T09:05:12 UTC" name="teardown" finished-at="2021-11-19T09:05:13 UTC" duration-ms="761" status="PASS">
+        <test-method is-config="true" signature="teardown(org.testng.ITestResult,org.testng.ITestContext)[pri:0, instance:ccpa.testcases.HomepageTestDPP@273e7444]" started-at="2021-11-22T09:31:31 UTC" name="teardown" finished-at="2021-11-22T09:31:31 UTC" duration-ms="357" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=www.researchakt.com status=SUCCESS method=HomepageTestDPP.LaunchUrl(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,org.testng.ITestContext)[pri:1, instance:ccpa.testcases.HomepageTestDPP@7db12bb6] output={null}]]]>
+                <![CDATA[[TestResult name=www.researchakt.com status=SUCCESS method=HomepageTestDPP.LaunchUrl(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,org.testng.ITestContext)[pri:1, instance:ccpa.testcases.HomepageTestDPP@273e7444] output={null}]]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[org.testng.TestRunner@245a26e1]]>
+                <![CDATA[org.testng.TestRunner@3af4e0bf]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-        <test-method signature="LaunchUrl(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,org.testng.ITestContext)[pri:1, instance:ccpa.testcases.HomepageTestDPP@7db12bb6]" started-at="2021-11-19T09:05:13 UTC" name="LaunchUrl" data-provider="geturls" finished-at="2021-11-19T09:05:30 UTC" duration-ms="16933" status="PASS">
+        <test-method signature="LaunchUrl(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,org.testng.ITestContext)[pri:1, instance:ccpa.testcases.HomepageTestDPP@273e7444]" started-at="2021-11-22T09:31:31 UTC" name="LaunchUrl" data-provider="geturls" finished-at="2021-11-22T09:31:48 UTC" duration-ms="17155" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -608,30 +556,30 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
             </param>
             <param index="5">
               <value>
-                <![CDATA[org.testng.TestRunner@245a26e1]]>
+                <![CDATA[org.testng.TestRunner@3af4e0bf]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LaunchUrl -->
-        <test-method is-config="true" signature="teardown(org.testng.ITestResult,org.testng.ITestContext)[pri:0, instance:ccpa.testcases.HomepageTestDPP@7db12bb6]" started-at="2021-11-19T09:05:30 UTC" name="teardown" finished-at="2021-11-19T09:05:38 UTC" duration-ms="8644" status="PASS">
+        <test-method is-config="true" signature="teardown(org.testng.ITestResult,org.testng.ITestContext)[pri:0, instance:ccpa.testcases.HomepageTestDPP@273e7444]" started-at="2021-11-22T09:31:48 UTC" name="teardown" finished-at="2021-11-22T09:31:49 UTC" duration-ms="339" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=www.vabysmo.com status=SUCCESS method=HomepageTestDPP.LaunchUrl(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,org.testng.ITestContext)[pri:1, instance:ccpa.testcases.HomepageTestDPP@7db12bb6] output={null}]]]>
+                <![CDATA[[TestResult name=www.vabysmo.com status=SUCCESS method=HomepageTestDPP.LaunchUrl(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,org.testng.ITestContext)[pri:1, instance:ccpa.testcases.HomepageTestDPP@273e7444] output={null}]]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[org.testng.TestRunner@245a26e1]]>
+                <![CDATA[org.testng.TestRunner@3af4e0bf]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-        <test-method signature="LaunchUrl(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,org.testng.ITestContext)[pri:1, instance:ccpa.testcases.HomepageTestDPP@7db12bb6]" started-at="2021-11-19T09:05:38 UTC" name="LaunchUrl" data-provider="geturls" finished-at="2021-11-19T09:05:55 UTC" duration-ms="16858" status="PASS">
+        <test-method signature="LaunchUrl(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,org.testng.ITestContext)[pri:1, instance:ccpa.testcases.HomepageTestDPP@273e7444]" started-at="2021-11-22T09:31:49 UTC" name="LaunchUrl" data-provider="geturls" finished-at="2021-11-22T09:32:06 UTC" duration-ms="17114" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -660,90 +608,38 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
             </param>
             <param index="5">
               <value>
-                <![CDATA[org.testng.TestRunner@245a26e1]]>
+                <![CDATA[org.testng.TestRunner@3af4e0bf]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LaunchUrl -->
-        <test-method is-config="true" signature="teardown(org.testng.ITestResult,org.testng.ITestContext)[pri:0, instance:ccpa.testcases.HomepageTestDPP@7db12bb6]" started-at="2021-11-19T09:05:55 UTC" name="teardown" finished-at="2021-11-19T09:05:56 UTC" duration-ms="1127" status="PASS">
+        <test-method is-config="true" signature="teardown(org.testng.ITestResult,org.testng.ITestContext)[pri:0, instance:ccpa.testcases.HomepageTestDPP@273e7444]" started-at="2021-11-22T09:32:06 UTC" name="teardown" finished-at="2021-11-22T09:32:06 UTC" duration-ms="514" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=www.vabysmo-hcp.com status=SUCCESS method=HomepageTestDPP.LaunchUrl(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,org.testng.ITestContext)[pri:1, instance:ccpa.testcases.HomepageTestDPP@7db12bb6] output={null}]]]>
+                <![CDATA[[TestResult name=www.vabysmo-hcp.com status=SUCCESS method=HomepageTestDPP.LaunchUrl(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,org.testng.ITestContext)[pri:1, instance:ccpa.testcases.HomepageTestDPP@273e7444] output={null}]]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[org.testng.TestRunner@245a26e1]]>
+                <![CDATA[org.testng.TestRunner@3af4e0bf]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-        <test-method signature="LaunchUrl(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,org.testng.ITestContext)[pri:1, instance:ccpa.testcases.HomepageTestDPP@7db12bb6]" started-at="2021-11-19T09:05:56 UTC" name="LaunchUrl" data-provider="geturls" finished-at="2021-11-19T09:06:34 UTC" duration-ms="37840" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[www.venclextahcp.com]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[ON]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[URL87]]>
-              </value>
-            </param>
-            <param index="4">
-              <value>
-                <![CDATA[true]]>
-              </value>
-            </param>
-            <param index="5">
-              <value>
-                <![CDATA[org.testng.TestRunner@245a26e1]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- LaunchUrl -->
-        <test-method is-config="true" signature="teardown(org.testng.ITestResult,org.testng.ITestContext)[pri:0, instance:ccpa.testcases.HomepageTestDPP@7db12bb6]" started-at="2021-11-19T09:06:34 UTC" name="teardown" finished-at="2021-11-19T09:06:35 UTC" duration-ms="924" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=www.venclextahcp.com status=SUCCESS method=HomepageTestDPP.LaunchUrl(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,org.testng.ITestContext)[pri:1, instance:ccpa.testcases.HomepageTestDPP@7db12bb6] output={null}]]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[org.testng.TestRunner@245a26e1]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardown -->
-        <test-method is-config="true" signature="endTest()[pri:0, instance:ccpa.testcases.HomepageTestDPP@7db12bb6]" started-at="2021-11-19T09:06:35 UTC" name="endTest" finished-at="2021-11-19T09:06:36 UTC" duration-ms="582" status="PASS">
+        <test-method is-config="true" signature="endTest()[pri:0, instance:ccpa.testcases.HomepageTestDPP@273e7444]" started-at="2021-11-22T09:32:06 UTC" name="endTest" finished-at="2021-11-22T09:32:07 UTC" duration-ms="588" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- endTest -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:ccpa.testcases.HomepageTestDPP@7db12bb6]" started-at="2021-11-19T09:06:36 UTC" name="teardown" finished-at="2021-11-19T09:06:36 UTC" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:ccpa.testcases.HomepageTestDPP@273e7444]" started-at="2021-11-22T09:32:07 UTC" name="teardown" finished-at="2021-11-22T09:32:07 UTC" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
       </class> <!-- ccpa.testcases.HomepageTestDPP -->
-    </test> <!-- Regression -->
-  </suite> <!-- CCPA -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

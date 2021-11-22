@@ -107,8 +107,8 @@ public class HomepageTestDPP extends Baseclass {
 		System.out.println(URL +"  Launched");
 		Thread.sleep(3000);
 		if(!URL.contains("https://"))
-		{
-			URL="https://"+URL;
+		{			
+			URL="https://"+URL;			
 		}
 		Thread.sleep(2000);
 		driver.get(URL);
@@ -118,7 +118,8 @@ public class HomepageTestDPP extends Baseclass {
 		
 		if(URL.equalsIgnoreCase("https://www.her2treatment.com"))
 		{
-			Thread.sleep(4000);
+			Thread.sleep(10000);
+			System.out.println(URL);
 		}
 		
 			boolean flag1=objhomepage.cookiesContainer();
