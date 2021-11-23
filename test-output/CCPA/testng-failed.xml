@@ -10,7 +10,7 @@
         <methods>
           <include name="startTest"/>
           <include name="setUp"/>
-          <include name="LaunchUrl" invocation-numbers="6"/>
+          <include name="LaunchUrl" invocation-numbers="41 45"/>
           <include name="teardown"/>
           <include name="teardown"/>
           <include name="endTest"/>
