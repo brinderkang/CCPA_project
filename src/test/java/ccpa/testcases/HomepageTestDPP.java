@@ -54,7 +54,7 @@ public class HomepageTestDPP extends Baseclass {
 	@BeforeClass
 	public static void startTest()
 	{
-	report = new ExtentReports(System.getProperty("user.dir")+"/test-output/ExtentReportss/ExtentReportResult.html");
+	report = new ExtentReports(System.getProperty("user.dir")+"/test-output/ExtentReportss/ExtentReportResult2.html");
 //	test = report.startTest("Launch URL : " + URL);
 	}
 	
