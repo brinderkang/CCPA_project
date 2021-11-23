@@ -137,7 +137,7 @@ public class Util extends Baseclass {
 		TakesScreenshot ts= (TakesScreenshot)driver;
 
 		File source=ts.getScreenshotAs(OutputType.FILE);
-		File Dest = new File(System.getProperty("user.dir")+"/src/main/java/ccpa/screenshotsextent/"+imagename+Fn_DateTime()+".png");
+		File Dest = new File(System.getProperty("user.dir")+"/src/main/java/ccpa/screenshotsextent/"+imagename+".png");
 		errflpath = Dest.getAbsolutePath();
 		FileUtils.copyFile(source, Dest);
 		}
